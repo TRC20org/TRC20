@@ -14,7 +14,7 @@ TRC20 base on TRON blockchain writing the string into the memo field of the tran
 ## Deploy txid
 https://tronscan.org/#/transaction/3200ca62dde62e4a79d6f6bbaf3bab3ff81a2a67164f709bc172835003ba1599
 
-## Mint TRXS with nodejs
+## Mint TRXI with nodejs
 1. Install Node.js
 2. Create a directory,such as `TRC20Mint`
 3. Open `TRC20Mint`, execute command:`npm init`
@@ -53,7 +53,7 @@ main().then(() => {
     });
 ```
 
-## Mint TRXS with TokenPocket Wallet
+## Mint TRXI with TokenPocket Wallet
  - Receiver address:T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb.
  - Transfer amount 0.000001 TRX
  - Click on Advanced Settings and fill in `data:,{"p":"trc-20","op":"mint","tick":"trxi","amt":"1000"}`
