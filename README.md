@@ -29,7 +29,7 @@ const tronWeb = new TronWeb(fullNode, solidityNode, eventServer, privateKey);
 
 const blackHole = "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb";  //Cannot transfer TRX to the same account,so need transfer TRX to black hole address
 
-const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1"}'; 
+const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1"}';  //transfer zero amount is invalid,so need transfer 0.000001 TRX to black hole address;
 
 async function main() {
 
