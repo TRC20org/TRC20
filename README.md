@@ -1,5 +1,5 @@
 # TRC20
-TRC20 base on tron blockchain writing the string into the memo field of the transaction to achieve this.
+TRC20 base on TRON blockchain writing the string into the memo field of the transaction to achieve this.
 
 ## Token Economic
  - Token: TRXS
@@ -27,9 +27,9 @@ const eventServer = new HttpProvider("https://api.trongrid.io");
 const privateKey = "your privateKey"; //
 const tronWeb = new TronWeb(fullNode, solidityNode, eventServer, privateKey);
 
-const blackHole = "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb";  //Cannot transfer TRX to the same account,so need transfer TRX to black hole address
+const blackHole = "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb";  //black hole address
 
-const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1"}';  //transfer zero amount is invalid,so need transfer 0.000001 TRX to black hole address;
+const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1"}';  //0.000001 TRX is the minimum transfer amount.
 
 async function main() {
 
@@ -55,6 +55,14 @@ main().then(() => {
  - Scanning blocks from the block number of deployed inscription onwards, iterating through each block's transactions and matching the `data` information returned by txid.
  - Use the FULL NODE HTTP API to query txid get the `from` and `to` addresses. For more details, please refer to the following link: https://developers.tron.network/reference/wallet-gettransactionbyid.
  - The obtained addresses need to undergo encoding conversion to Tron wallet addresses. For more details, please refer to the following link: https://www.btcschools.net/tron/tron_tool_base58check_hex.php.
+
+
+## FAQ
+### Why you need transfer to `T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb` account?
+Because TRON blockchain cannot transfer to yourself address.We decided to transfer the black hole address to the TRON blockchain. Refer to the black hole address given in the official [documentation](https://developers.tron.network/docs/faq#3-what-is-the-destruction-address-of-tron)https://developers.tron.network/docs/faq#3-what-is-the-destruction-address-of-tron of the TRON blockchain. 
+
+### Why you need transfer to 0.000001 TRX to black hole address?
+Because TRON blockchain cannot transfer zero amount, 0.000001 TRX is the minimum transfer amount.
 
 
 
