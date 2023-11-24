@@ -54,7 +54,7 @@ main().then(() => {
 ```
 
 
-## Indexer
+## Idea for developing indexer
 1. Recording the block number of deploy inscription.
 2. Get all transactions of black hole address.
 3. Use the FULL NODE HTTP API to get the `from`,`to`,`data` field of each txid, match all mint inscriptions. For more details, please refer to the following link: https://developers.tron.network/reference/wallet-gettransactionbyid.
