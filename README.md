@@ -57,7 +57,6 @@ main().then(() => {
  - Receiver address:T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb.
  - Transfer amount 0.000001 TRX
  - Click on Advanced Settings and fill in `data:,{"p":"trc-20","op":"mint","tick":"trxi","amt":"1000"}`
-![dbc85fd41563c2e8328dde5dae67e7b](https://github.com/TRC20org/TRC20/assets/151912398/130e91fc-24cc-45e6-9d78-12fde1659e13)
 
 
 
