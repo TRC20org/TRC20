@@ -2,13 +2,13 @@
 TRC20 base on TRON blockchain writing the string into the memo field of the transaction to achieve this.
 
 ## Token Economic
- - Token: TRXS
+ - Token: TRXI
  - Supply: 21000000000
  - limit: 1000
 
 ## Method
- - deploy: `data:,{"p":"trc-20","op":"deploy","tick":"trxs","max":"21000000000","lim":"1000"}`
- - mint: `data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1000"}`
+ - deploy: `data:,{"p":"trc-20","op":"deploy","tick":"trxi","max":"2100000000","lim":"1000"}`
+ - mint: `data:,{"p":"trc-20","op":"mint","tick":"trxi","amt":"1000"}`
  - transfer: TBA
 
 ## Deploy txid
