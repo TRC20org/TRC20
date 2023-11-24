@@ -15,8 +15,8 @@ TRC20 base on TRON blockchain writing the string into the memo field of the tran
 https://tronscan.org/#/transaction/c9fa38e8af788c3d1694fae2f0d6440d8e3515e5ec1f31f0874045ea8c9c7c94
 
 ## Mint TRXS with nodejs
-1. Install Node.js;
-2. Create a directory,such as `TRC20Mint`;
+1. Install Node.js
+2. Create a directory,such as `TRC20Mint`
 3. Open `TRC20Mint`, execute command:`npm init`
 4. Execute command:`npm install tronweb `
 5. Create an index.js file,copy the code below
