@@ -29,11 +29,11 @@ const tronWeb = new TronWeb(fullNode, solidityNode, eventServer, privateKey);
 
 const blackHole = "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb";  //black hole address
 
-const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1"}';  //0.000001 TRX is the minimum transfer amount.
+const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1000"}';  
 
 async function main() {
 
-    const unSignedTxn = await tronWeb.transactionBuilder.sendTrx(blackHole, 1);
+    const unSignedTxn = await tronWeb.transactionBuilder.sendTrx(blackHole, 1); //0.000001 TRX is the minimum transfer amount.
     const unSignedTxnWithNote = await tronWeb.transactionBuilder.addUpdateData(unSignedTxn, memo, 'utf8');
     const signedTxn = await tronWeb.trx.sign(unSignedTxnWithNote);
     console.log("signed =>", signedTxn);
