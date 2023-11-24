@@ -48,7 +48,7 @@ main().then(() => {
 
 ## Indexer
  - Recording the block number of deploy inscription.
- - Scanning blocks from the block number of deployed inscription onwards, iterating through each block's transactions and matching the data information returned by txid.
+ - Scanning blocks from the block number of deployed inscription onwards, iterating through each block's transactions and matching the `data` information returned by txid.
  - Use the FULL NODE HTTP API to query txid get the `from` and `to` addresses. For more details, please refer to the following link: https://developers.tron.network/reference/wallet-gettransactionbyid.
  - The obtained addresses need to undergo encoding conversion to Tron wallet addresses. For more details, please refer to the following link: https://www.btcschools.net/tron/tron_tool_base58check_hex.php.
 
