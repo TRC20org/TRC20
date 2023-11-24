@@ -63,7 +63,7 @@ main().then(() => {
 
 ## FAQ
 ### Why you need transfer to `T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb` account?
-Because TRON blockchain cannot transfer to yourself address.We decided to transfer the black hole address to the TRON blockchain. Refer to the black hole address given in the official [documentation](https://developers.tron.network/docs/faq#3-what-is-the-destruction-address-of-tron)https://developers.tron.network/docs/faq#3-what-is-the-destruction-address-of-tron of the TRON blockchain. 
+Because TRON blockchain cannot transfer to yourself address.We decided transfer to the black hole address of the TRON blockchain. Refer to the black hole address given in the official [documentation](https://developers.tron.network/docs/faq#3-what-is-the-destruction-address-of-tron) of the TRON blockchain. 
 
 ### Why you need transfer to 0.000001 TRX to black hole address?
 Because TRON blockchain cannot transfer zero amount, 0.000001 TRX is the minimum transfer amount.
