@@ -12,7 +12,7 @@ TRC20 base on TRON blockchain writing the string into the memo field of the tran
  - transfer: TBA
 
 ## Deploy txid
-https://tronscan.org/#/transaction/c9fa38e8af788c3d1694fae2f0d6440d8e3515e5ec1f31f0874045ea8c9c7c94
+https://tronscan.org/#/transaction/3200ca62dde62e4a79d6f6bbaf3bab3ff81a2a67164f709bc172835003ba1599
 
 ## Mint TRXS with nodejs
 1. Install Node.js
@@ -33,7 +33,7 @@ const tronWeb = new TronWeb(fullNode, solidityNode, eventServer, privateKey);
 
 const blackHole = "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb";  //black hole address
 
-const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1000"}';  
+const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxi","amt":"1000"}';  
 
 async function main() {
 
@@ -54,6 +54,9 @@ main().then(() => {
 ```
 
 ## Mint TRXS with TokenPocket Wallet
+ - Receiver address:T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb.
+ - Transfer amount 0.000001 TRX
+ - Click on Advanced Settings and fill in `data:,{"p":"trc-20","op":"mint","tick":"trxi","amt":"1000"}`
 ![dbc85fd41563c2e8328dde5dae67e7b](https://github.com/TRC20org/TRC20/assets/151912398/130e91fc-24cc-45e6-9d78-12fde1659e13)
 
 
