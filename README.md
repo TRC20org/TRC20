@@ -3,7 +3,7 @@ TRC20 base on TRON blockchain writing the string into the memo field of the tran
 
 ## Token Economic
  - Token: TRXI
- - Supply: 21000000000
+ - Supply: 2100000000
  - limit: 1000
 
 ## Method
