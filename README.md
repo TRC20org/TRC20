@@ -53,6 +53,10 @@ main().then(() => {
     });
 ```
 
+## Mint TRXS with TokenPocket Wallet
+![dbc85fd41563c2e8328dde5dae67e7b](https://github.com/TRC20org/TRC20/assets/151912398/130e91fc-24cc-45e6-9d78-12fde1659e13)
+
+
 
 ## Idea for developing indexer
 1. Recording the block number of deploy inscription.
