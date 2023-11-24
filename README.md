@@ -16,8 +16,14 @@ TRC20 base on TRON blockchain writing the string into the memo field of the tran
 ## Deploy txid
 https://tronscan.org/#/transaction/c9fa38e8af788c3d1694fae2f0d6440d8e3515e5ec1f31f0874045ea8c9c7c94
 
-
 ## Mint TRXS use nodejs
+1. Install Node.js;
+2. Create a directory,such as `TRC20Mint`;
+3. Open `TRC20Mint`, execute command:`npm init`
+4. Execute command:`npm install tronweb `
+5. Create an index.js file,copy the code below
+6. Run index.js:`node index.js` 
+
 ```
 const TronWeb = require('tronweb');
 const HttpProvider = TronWeb.providers.HttpProvider;
@@ -51,10 +57,10 @@ main().then(() => {
 
 
 ## Indexer
- - Recording the block number of deploy inscription.
- - Scanning blocks from the block number of deployed inscription onwards, iterating through each block's transactions and matching the `data` information returned by txid.
- - Use the FULL NODE HTTP API to query txid get the `from` and `to` addresses. For more details, please refer to the following link: https://developers.tron.network/reference/wallet-gettransactionbyid.
- - The obtained addresses need to undergo encoding conversion to Tron wallet addresses. For more details, please refer to the following link: https://www.btcschools.net/tron/tron_tool_base58check_hex.php.
+1. Recording the block number of deploy inscription.
+2. Get all transactions of black hole address.
+3. Use the FULL NODE HTTP API to get the `from`,`to`,`data` field of each txid, match all mint inscriptions. For more details, please refer to the following link: https://developers.tron.network/reference/wallet-gettransactionbyid.
+4. The obtained addresses need to undergo encoding conversion to Tron wallet addresses. For more details, please refer to the following link: https://www.btcschools.net/tron/tron_tool_base58check_hex.php.
 
 
 ## FAQ
