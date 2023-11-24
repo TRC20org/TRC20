@@ -23,13 +23,13 @@ const eventServer = new HttpProvider("https://api.trongrid.io");
 const privateKey = "your privateKey"; //
 const tronWeb = new TronWeb(fullNode, solidityNode, eventServer, privateKey);
 
-const CONTRACT = "your tron address";  //
+const blackHole = "T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb";  //Cannot transfer TRX to the same account,so need transfer TRX to black hole address
 
-const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1000"}';
+const memo = 'data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1"}'; 
 
 async function main() {
 
-    const unSignedTxn = await tronWeb.transactionBuilder.sendTrx(CONTRACT, 1000);
+    const unSignedTxn = await tronWeb.transactionBuilder.sendTrx(blackHole, 1);
     const unSignedTxnWithNote = await tronWeb.transactionBuilder.addUpdateData(unSignedTxn, memo, 'utf8');
     const signedTxn = await tronWeb.trx.sign(unSignedTxnWithNote);
     console.log("signed =>", signedTxn);
