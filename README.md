@@ -13,6 +13,10 @@ TRC20 base on tron blockchain writing the string into the memo field of the tran
  - mint: `data:,{"p":"trc-20","op":"mint","tick":"trxs","amt":"1000"}`
  - transfer: TBA
 
+## Deploy txid
+https://tronscan.org/#/transaction/c9fa38e8af788c3d1694fae2f0d6440d8e3515e5ec1f31f0874045ea8c9c7c94
+
+
 ## Mint TRXS use nodejs
 ```
 const TronWeb = require('tronweb');
