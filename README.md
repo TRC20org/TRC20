@@ -9,7 +9,7 @@ TRC20 base on TRON blockchain writing the string into the memo field of the tran
 ## Method
  - deploy: `data:,{"p":"trc-20","op":"deploy","tick":"trxi","max":"2100000000","lim":"1000"}`
  - mint: `data:,{"p":"trc-20","op":"mint","tick":"trxi","amt":"1000"}`
- - transfer: TBA
+ - transfer: `data:,{"p":"trc-20","op":"transfer","tick":"trxi","detail":[{"to":"TRON Address","amt":"1000"}]}`
 
 ## Deploy txid
 https://tronscan.org/#/transaction/3200ca62dde62e4a79d6f6bbaf3bab3ff81a2a67164f709bc172835003ba1599
