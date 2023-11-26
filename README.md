@@ -1,6 +1,8 @@
 # TRC20 Protocol
 TRC20 Protocol base on TRON blockchain writing the string into the memo field of the transaction to achieve this.
 
+Official Twitter:[@Trc20_TRXS](https://twitter.com/Trc20_TRXS)
+
 ## Token Economic
  - Token: TRXI
  - Supply: 2100000000
