@@ -1,5 +1,5 @@
-# TRC20
-TRC20 base on TRON blockchain writing the string into the memo field of the transaction to achieve this.
+# TRC20 Protocol
+TRC20 Protocol base on TRON blockchain writing the string into the memo field of the transaction to achieve this.
 
 ## Token Economic
  - Token: TRXI
